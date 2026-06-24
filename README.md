@@ -1,6 +1,6 @@
 # Yuk Tashish AI Matching Tizimi
 
-**LangGraph + Claude AI + PostgreSQL** asosidagi avtomatik yuk tashish matching tizimi.
+**LangGraph + Gemini AI + PostgreSQL** asosidagi avtomatik yuk tashish matching tizimi.
 
 ---
 
@@ -28,7 +28,7 @@
 │  zapros_olish → mashinalarni_qidirish → ai_baholash     │
 │                                      → natijani_saqlash │
 │                                                         │
-│  (Claude Sonnet 4.6 orqali AI qaror)                   │
+│  (Gemini orqali AI qaror)                   │
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -73,8 +73,8 @@ cp .env.example .env
 
 ```env
 DATABASE_URL=postgresql://yuk_user:parol123@localhost:5432/yuk_tashish_db
-ANTHROPIC_API_KEY=sk-ant-...
-AGENT_MODEL=claude-sonnet-4-6
+GOOGLE_GEMINI_API=sk-ant-...
+AGENT_MODEL=gemini-1.5-flash
 ZAPROS_INTERVAL_MIN=1
 ZAPROS_INTERVAL_MAX=10
 ```
@@ -113,7 +113,7 @@ START
   │ xato? ──→ [xato_boshqarish] → END
   │
   ▼
-[ai_baholash]  ← Claude Sonnet 4.6
+[ai_baholash]  ← GEMINI FLASH 1.5
   │ xato? ──→ [xato_boshqarish] → END
   │
   ▼
