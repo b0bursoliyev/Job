@@ -1,0 +1,247 @@
+2026-06-23 20:22:25 | INFO     | Migratsiya boshlanmoqda...
+2026-06-23 20:22:25 | ERROR    | ✗ Migratsiya xatosi: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 20:26:16 | INFO     | Migratsiya boshlanmoqda...
+2026-06-23 20:26:16 | ERROR    | ✗ Migratsiya xatosi: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 20:26:23 | INFO     | Migratsiya boshlanmoqda...
+2026-06-23 20:26:23 | ERROR    | ✗ Migratsiya xatosi: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 20:28:31 | INFO     | Migratsiya boshlanmoqda...
+2026-06-23 20:28:31 | INFO     | ✓ Barcha jadvallar yaratildi (SQLAlchemy ORM)
+2026-06-23 20:28:31 | INFO     | ✓ 001_create_zaproslar.sql bajarildi
+2026-06-23 20:28:31 | WARNING  |   002_create_malumotlar.sql — syntax error at or near "lumotlari"
+LINE 37: ...umotlar IS 'Transport vositalari (mashinalar) ma\'lumotlari'...
+                                                              ^
+ (o'tkazib yuborildi)
+2026-06-23 20:28:31 | INFO     | ✓ 003_create_agent_takliflari.sql bajarildi
+2026-06-23 20:28:31 | INFO     | ✓ Migratsiya muvaffaqiyatli yakunlandi!
+2026-06-23 20:28:54 | INFO     | Migratsiya boshlanmoqda...
+2026-06-23 20:28:54 | INFO     | ✓ Barcha jadvallar yaratildi (SQLAlchemy ORM)
+2026-06-23 20:28:54 | WARNING  |   001_create_zaproslar.sql — trigger "trg_zaproslar_updated_at" for relation "zaproslar" already exists
+ (o'tkazib yuborildi)
+2026-06-23 20:28:54 | WARNING  |   002_create_malumotlar.sql — syntax error at or near "ona"
+LINE 53:     ('50 E 5678', 'Farg\'ona sh., Farg\'ona', 40.3842, 71.78...
+                                  ^
+ (o'tkazib yuborildi)
+2026-06-23 20:28:54 | WARNING  |   003_create_agent_takliflari.sql — trigger "trg_agent_takliflari_updated_at" for relation "agent_takliflari" already exists
+ (o'tkazib yuborildi)
+2026-06-23 20:28:54 | INFO     | ✓ Migratsiya muvaffaqiyatli yakunlandi!
+2026-06-23 20:29:32 | INFO     | Migratsiya boshlanmoqda...
+2026-06-23 20:29:32 | INFO     | ✓ Barcha jadvallar yaratildi (SQLAlchemy ORM)
+2026-06-23 20:29:32 | WARNING  |   001_create_zaproslar.sql — trigger "trg_zaproslar_updated_at" for relation "zaproslar" already exists
+ (o'tkazib yuborildi)
+2026-06-23 20:29:32 | INFO     | ✓ 002_create_malumotlar.sql bajarildi
+2026-06-23 20:29:32 | WARNING  |   003_create_agent_takliflari.sql — trigger "trg_agent_takliflari_updated_at" for relation "agent_takliflari" already exists
+ (o'tkazib yuborildi)
+2026-06-23 20:29:32 | INFO     | ✓ Migratsiya muvaffaqiyatli yakunlandi!
+2026-06-23 20:29:46 | INFO     | Migratsiya boshlanmoqda...
+2026-06-23 20:29:46 | INFO     | ✓ Barcha jadvallar yaratildi (SQLAlchemy ORM)
+2026-06-23 20:29:46 | WARNING  |   001_create_zaproslar.sql — trigger "trg_zaproslar_updated_at" for relation "zaproslar" already exists
+ (o'tkazib yuborildi)
+2026-06-23 20:29:46 | WARNING  |   002_create_malumotlar.sql — trigger "trg_malumotlar_updated_at" for relation "malumotlar" already exists
+ (o'tkazib yuborildi)
+2026-06-23 20:29:46 | WARNING  |   003_create_agent_takliflari.sql — trigger "trg_agent_takliflari_updated_at" for relation "agent_takliflari" already exists
+ (o'tkazib yuborildi)
+2026-06-23 20:29:46 | INFO     | ✓ Migratsiya muvaffaqiyatli yakunlandi!
+2026-06-23 20:29:47 | INFO     | Demo rejim boshlanmoqda...
+2026-06-23 20:29:47 | INFO     | [Agent] Zapros #1 o'qilmoqda...
+2026-06-23 20:29:47 | INFO     | [Agent] Zapros topildi: Toshkent sh., Toshkent → Samarqand sh., Samarqand
+2026-06-23 20:29:47 | INFO     | [Agent] Bo'sh mashinalar qidirilmoqda... (viloyat: Toshkent)
+2026-06-23 20:29:47 | INFO     | [Agent] Topilgan mashinalar: 2 ta yaqin, 10 ta uzoq
+2026-06-23 20:29:47 | INFO     | [Agent] AI baholash boshlandi (12 ta mashina)...
+2026-06-23 20:29:49 | INFO     | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-06-23 20:29:49 | ERROR    | [Agent] AI baholashda xato: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CcLRu2tt6WLdjmfrPJQtR'}
+2026-06-23 20:29:49 | ERROR    | [Agent] Zapros #1 uchun xato: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CcLRu2tt6WLdjmfrPJQtR'}
+2026-06-23 20:29:50 | INFO     | [Agent] Zapros #2 o'qilmoqda...
+2026-06-23 20:29:50 | INFO     | [Agent] Zapros topildi: Namangan sh., Namangan → Farg'ona sh., Farg'ona
+2026-06-23 20:29:50 | INFO     | [Agent] Bo'sh mashinalar qidirilmoqda... (viloyat: Namangan)
+2026-06-23 20:29:50 | INFO     | [Agent] Topilgan mashinalar: 1 ta yaqin, 10 ta uzoq
+2026-06-23 20:29:50 | INFO     | [Agent] AI baholash boshlandi (11 ta mashina)...
+2026-06-23 20:29:51 | INFO     | HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-06-23 20:29:51 | ERROR    | [Agent] AI baholashda xato: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CcLRu99AsT4UQLqUeFUXW'}
+2026-06-23 20:29:51 | ERROR    | [Agent] Zapros #2 uchun xato: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CcLRu99AsT4UQLqUeFUXW'}
+2026-06-23 20:32:43 | INFO     | Migratsiya boshlanmoqda...
+2026-06-23 20:32:43 | INFO     | ✓ Barcha jadvallar yaratildi (SQLAlchemy ORM)
+2026-06-23 20:32:43 | WARNING  |   001_create_zaproslar.sql — trigger "trg_zaproslar_updated_at" for relation "zaproslar" already exists
+ (o'tkazib yuborildi)
+2026-06-23 20:32:43 | WARNING  |   002_create_malumotlar.sql — trigger "trg_malumotlar_updated_at" for relation "malumotlar" already exists
+ (o'tkazib yuborildi)
+2026-06-23 20:32:43 | WARNING  |   003_create_agent_takliflari.sql — trigger "trg_agent_takliflari_updated_at" for relation "agent_takliflari" already exists
+ (o'tkazib yuborildi)
+2026-06-23 20:32:43 | INFO     | ✓ Migratsiya muvaffaqiyatli yakunlandi!
+2026-06-23 20:32:44 | INFO     | Demo rejim boshlanmoqda...
+2026-06-23 20:32:44 | INFO     | [Agent] Zapros #3 o'qilmoqda...
+2026-06-23 20:32:44 | INFO     | [Agent] Zapros topildi: Toshkent sh., Toshkent → Samarqand sh., Samarqand
+2026-06-23 20:32:44 | INFO     | [Agent] Bo'sh mashinalar qidirilmoqda... (viloyat: Toshkent)
+2026-06-23 20:32:44 | INFO     | [Agent] Topilgan mashinalar: 2 ta yaqin, 10 ta uzoq
+2026-06-23 20:32:44 | INFO     | [Agent] AI baholash boshlandi (12 ta mashina)...
+2026-06-23 20:32:44 | INFO     | AFC is enabled with max remote calls: 10.
+2026-06-23 20:32:45 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-06-23 20:32:45 | INFO     | Retrying google.genai._api_client.BaseApiClient._request_once in 1.73 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}.
+2026-06-23 20:32:47 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-06-23 20:32:47 | INFO     | Retrying google.genai._api_client.BaseApiClient._request_once in 2.01 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}.
+2026-06-23 20:32:50 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-06-23 20:32:50 | INFO     | Retrying google.genai._api_client.BaseApiClient._request_once in 4.08 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}.
+2026-06-23 20:34:52 | INFO     | Migratsiya boshlanmoqda...
+2026-06-23 20:34:52 | INFO     | ✓ Barcha jadvallar yaratildi (SQLAlchemy ORM)
+2026-06-23 20:34:52 | WARNING  |   001_create_zaproslar.sql — trigger "trg_zaproslar_updated_at" for relation "zaproslar" already exists
+ (o'tkazib yuborildi)
+2026-06-23 20:34:52 | WARNING  |   002_create_malumotlar.sql — trigger "trg_malumotlar_updated_at" for relation "malumotlar" already exists
+ (o'tkazib yuborildi)
+2026-06-23 20:34:52 | WARNING  |   003_create_agent_takliflari.sql — trigger "trg_agent_takliflari_updated_at" for relation "agent_takliflari" already exists
+ (o'tkazib yuborildi)
+2026-06-23 20:34:52 | INFO     | ✓ Migratsiya muvaffaqiyatli yakunlandi!
+2026-06-23 20:34:52 | INFO     | Demo rejim boshlanmoqda...
+2026-06-23 20:34:52 | INFO     | [Agent] Zapros #4 o'qilmoqda...
+2026-06-23 20:34:52 | INFO     | [Agent] Zapros topildi: Toshkent sh., Toshkent → Samarqand sh., Samarqand
+2026-06-23 20:34:52 | INFO     | [Agent] Bo'sh mashinalar qidirilmoqda... (viloyat: Toshkent)
+2026-06-23 20:34:53 | INFO     | [Agent] Topilgan mashinalar: 2 ta yaqin, 10 ta uzoq
+2026-06-23 20:34:53 | INFO     | [Agent] AI baholash boshlandi (12 ta mashina)...
+2026-06-23 20:34:53 | INFO     | AFC is enabled with max remote calls: 10.
+2026-06-23 20:34:53 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-06-23 20:34:53 | ERROR    | [Agent] AI baholashda xato: Error calling model 'gemini-1.5-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-06-23 20:34:53 | ERROR    | [Agent] Zapros #4 uchun xato: Error calling model 'gemini-1.5-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-06-23 20:34:54 | INFO     | [Agent] Zapros #5 o'qilmoqda...
+2026-06-23 20:34:54 | INFO     | [Agent] Zapros topildi: Namangan sh., Namangan → Farg'ona sh., Farg'ona
+2026-06-23 20:34:54 | INFO     | [Agent] Bo'sh mashinalar qidirilmoqda... (viloyat: Namangan)
+2026-06-23 20:34:54 | INFO     | [Agent] Topilgan mashinalar: 1 ta yaqin, 10 ta uzoq
+2026-06-23 20:34:54 | INFO     | [Agent] AI baholash boshlandi (11 ta mashina)...
+2026-06-23 20:34:54 | INFO     | AFC is enabled with max remote calls: 10.
+2026-06-23 20:34:55 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-06-23 20:34:55 | ERROR    | [Agent] AI baholashda xato: Error calling model 'gemini-1.5-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-06-23 20:34:55 | ERROR    | [Agent] Zapros #5 uchun xato: Error calling model 'gemini-1.5-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-06-23 20:34:56 | INFO     | [Agent] Zapros #6 o'qilmoqda...
+2026-06-23 20:34:56 | INFO     | [Agent] Zapros topildi: Buxoro sh., Buxoro → Qarshi sh., Qashqadaryo
+2026-06-23 20:34:56 | INFO     | [Agent] Bo'sh mashinalar qidirilmoqda... (viloyat: Buxoro)
+2026-06-23 20:34:56 | INFO     | [Agent] Topilgan mashinalar: 1 ta yaqin, 10 ta uzoq
+2026-06-23 20:34:56 | INFO     | [Agent] AI baholash boshlandi (11 ta mashina)...
+2026-06-23 20:34:56 | INFO     | AFC is enabled with max remote calls: 10.
+2026-06-23 20:34:56 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-06-23 20:34:56 | ERROR    | [Agent] AI baholashda xato: Error calling model 'gemini-1.5-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-06-23 20:34:56 | ERROR    | [Agent] Zapros #6 uchun xato: Error calling model 'gemini-1.5-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-06-23 20:35:26 | INFO     | Migratsiya boshlanmoqda...
+2026-06-23 20:35:26 | INFO     | ✓ Barcha jadvallar yaratildi (SQLAlchemy ORM)
+2026-06-23 20:35:26 | WARNING  |   001_create_zaproslar.sql — trigger "trg_zaproslar_updated_at" for relation "zaproslar" already exists
+ (o'tkazib yuborildi)
+2026-06-23 20:35:26 | WARNING  |   002_create_malumotlar.sql — trigger "trg_malumotlar_updated_at" for relation "malumotlar" already exists
+ (o'tkazib yuborildi)
+2026-06-23 20:35:26 | WARNING  |   003_create_agent_takliflari.sql — trigger "trg_agent_takliflari_updated_at" for relation "agent_takliflari" already exists
+ (o'tkazib yuborildi)
+2026-06-23 20:35:26 | INFO     | ✓ Migratsiya muvaffaqiyatli yakunlandi!
+2026-06-23 20:35:27 | INFO     | Demo rejim boshlanmoqda...
+2026-06-23 20:35:27 | INFO     | [Agent] Zapros #7 o'qilmoqda...
+2026-06-23 20:35:27 | INFO     | [Agent] Zapros topildi: Toshkent sh., Toshkent → Samarqand sh., Samarqand
+2026-06-23 20:35:27 | INFO     | [Agent] Bo'sh mashinalar qidirilmoqda... (viloyat: Toshkent)
+2026-06-23 20:35:27 | INFO     | [Agent] Topilgan mashinalar: 2 ta yaqin, 10 ta uzoq
+2026-06-23 20:35:27 | INFO     | [Agent] AI baholash boshlandi (12 ta mashina)...
+2026-06-23 20:35:27 | INFO     | AFC is enabled with max remote calls: 10.
+2026-06-23 20:35:27 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-06-23 20:35:27 | INFO     | Retrying google.genai._api_client.BaseApiClient._request_once in 1.66 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}.
+2026-06-23 20:35:29 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-06-23 20:35:29 | INFO     | Retrying google.genai._api_client.BaseApiClient._request_once in 2.28 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}.
+2026-06-23 20:35:32 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-06-23 20:35:32 | INFO     | Retrying google.genai._api_client.BaseApiClient._request_once in 4.3 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}.
+2026-06-23 20:36:35 | INFO     | Migratsiya boshlanmoqda...
+2026-06-23 20:36:35 | INFO     | ✓ Barcha jadvallar yaratildi (SQLAlchemy ORM)
+2026-06-23 20:36:35 | WARNING  |   001_create_zaproslar.sql — trigger "trg_zaproslar_updated_at" for relation "zaproslar" already exists
+ (o'tkazib yuborildi)
+2026-06-23 20:36:35 | WARNING  |   002_create_malumotlar.sql — trigger "trg_malumotlar_updated_at" for relation "malumotlar" already exists
+ (o'tkazib yuborildi)
+2026-06-23 20:36:35 | WARNING  |   003_create_agent_takliflari.sql — trigger "trg_agent_takliflari_updated_at" for relation "agent_takliflari" already exists
+ (o'tkazib yuborildi)
+2026-06-23 20:36:35 | INFO     | ✓ Migratsiya muvaffaqiyatli yakunlandi!
+2026-06-23 20:36:36 | INFO     | Demo rejim boshlanmoqda...
+2026-06-23 20:36:36 | INFO     | [Agent] Zapros #8 o'qilmoqda...
+2026-06-23 20:36:36 | INFO     | [Agent] Zapros topildi: Toshkent sh., Toshkent → Samarqand sh., Samarqand
+2026-06-23 20:36:36 | INFO     | [Agent] Bo'sh mashinalar qidirilmoqda... (viloyat: Toshkent)
+2026-06-23 20:36:36 | INFO     | [Agent] Topilgan mashinalar: 2 ta yaqin, 10 ta uzoq
+2026-06-23 20:36:36 | INFO     | [Agent] AI baholash boshlandi (12 ta mashina)...
+2026-06-23 20:36:36 | INFO     | AFC is enabled with max remote calls: 10.
+2026-06-23 20:36:38 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-06-23 20:36:38 | ERROR    | [Agent] AI baholashda xato: 'list' object has no attribute 'strip'
+2026-06-23 20:36:38 | ERROR    | [Agent] Zapros #8 uchun xato: 'list' object has no attribute 'strip'
+2026-06-23 20:36:39 | INFO     | [Agent] Zapros #9 o'qilmoqda...
+2026-06-23 20:36:39 | INFO     | [Agent] Zapros topildi: Namangan sh., Namangan → Farg'ona sh., Farg'ona
+2026-06-23 20:36:39 | INFO     | [Agent] Bo'sh mashinalar qidirilmoqda... (viloyat: Namangan)
+2026-06-23 20:36:39 | INFO     | [Agent] Topilgan mashinalar: 1 ta yaqin, 10 ta uzoq
+2026-06-23 20:36:39 | INFO     | [Agent] AI baholash boshlandi (11 ta mashina)...
+2026-06-23 20:36:39 | INFO     | AFC is enabled with max remote calls: 10.
+2026-06-23 20:36:40 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-06-23 20:36:40 | ERROR    | [Agent] AI baholashda xato: 'list' object has no attribute 'strip'
+2026-06-23 20:36:40 | ERROR    | [Agent] Zapros #9 uchun xato: 'list' object has no attribute 'strip'
+2026-06-23 20:36:41 | INFO     | [Agent] Zapros #10 o'qilmoqda...
+2026-06-23 20:36:41 | INFO     | [Agent] Zapros topildi: Buxoro sh., Buxoro → Qarshi sh., Qashqadaryo
+2026-06-23 20:36:41 | INFO     | [Agent] Bo'sh mashinalar qidirilmoqda... (viloyat: Buxoro)
+2026-06-23 20:36:41 | INFO     | [Agent] Topilgan mashinalar: 1 ta yaqin, 10 ta uzoq
+2026-06-23 20:36:41 | INFO     | [Agent] AI baholash boshlandi (11 ta mashina)...
+2026-06-23 20:36:41 | INFO     | AFC is enabled with max remote calls: 10.
+2026-06-23 20:36:42 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-06-23 20:36:42 | ERROR    | [Agent] AI baholashda xato: 'list' object has no attribute 'strip'
+2026-06-23 20:36:42 | ERROR    | [Agent] Zapros #10 uchun xato: 'list' object has no attribute 'strip'
+2026-06-23 20:37:34 | INFO     | Migratsiya boshlanmoqda...
+2026-06-23 20:37:34 | INFO     | ✓ Barcha jadvallar yaratildi (SQLAlchemy ORM)
+2026-06-23 20:37:34 | WARNING  |   001_create_zaproslar.sql — trigger "trg_zaproslar_updated_at" for relation "zaproslar" already exists
+ (o'tkazib yuborildi)
+2026-06-23 20:37:34 | WARNING  |   002_create_malumotlar.sql — trigger "trg_malumotlar_updated_at" for relation "malumotlar" already exists
+ (o'tkazib yuborildi)
+2026-06-23 20:37:34 | WARNING  |   003_create_agent_takliflari.sql — trigger "trg_agent_takliflari_updated_at" for relation "agent_takliflari" already exists
+ (o'tkazib yuborildi)
+2026-06-23 20:37:34 | INFO     | ✓ Migratsiya muvaffaqiyatli yakunlandi!
+2026-06-23 20:37:35 | INFO     | Demo rejim boshlanmoqda...
+2026-06-23 20:37:35 | INFO     | [Agent] Zapros #11 o'qilmoqda...
+2026-06-23 20:37:35 | INFO     | [Agent] Zapros topildi: Toshkent sh., Toshkent → Samarqand sh., Samarqand
+2026-06-23 20:37:35 | INFO     | [Agent] Bo'sh mashinalar qidirilmoqda... (viloyat: Toshkent)
+2026-06-23 20:37:35 | INFO     | [Agent] Topilgan mashinalar: 2 ta yaqin, 10 ta uzoq
+2026-06-23 20:37:35 | INFO     | [Agent] AI baholash boshlandi (12 ta mashina)...
+2026-06-23 20:37:35 | INFO     | AFC is enabled with max remote calls: 10.
+2026-06-23 20:37:36 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-06-23 20:37:36 | INFO     | [Agent] AI tanladi: #1 01 A 1234 — ball: 100%
+2026-06-23 20:37:36 | INFO     | [Agent] Natija saqlanmoqda... kechikish: 1.095s
+2026-06-23 20:37:36 | INFO     | [Agent] ✓ Saqlandi | Zapros #11 → Mashina #1 | Ball: 100% | Kechikish: 1.095s
+2026-06-23 20:37:37 | INFO     | [Agent] Zapros #12 o'qilmoqda...
+2026-06-23 20:37:37 | INFO     | [Agent] Zapros topildi: Namangan sh., Namangan → Farg'ona sh., Farg'ona
+2026-06-23 20:37:37 | INFO     | [Agent] Bo'sh mashinalar qidirilmoqda... (viloyat: Namangan)
+2026-06-23 20:37:37 | INFO     | [Agent] Topilgan mashinalar: 1 ta yaqin, 10 ta uzoq
+2026-06-23 20:37:37 | INFO     | [Agent] AI baholash boshlandi (11 ta mashina)...
+2026-06-23 20:37:37 | INFO     | AFC is enabled with max remote calls: 10.
+2026-06-23 20:37:38 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-06-23 20:37:38 | INFO     | [Agent] AI tanladi: #5 30 G 7890 — ball: 100%
+2026-06-23 20:37:38 | INFO     | [Agent] Natija saqlanmoqda... kechikish: 1.099s
+2026-06-23 20:37:38 | INFO     | [Agent] ✓ Saqlandi | Zapros #12 → Mashina #5 | Ball: 100% | Kechikish: 1.099s
+2026-06-23 20:37:39 | INFO     | [Agent] Zapros #13 o'qilmoqda...
+2026-06-23 20:37:39 | INFO     | [Agent] Zapros topildi: Buxoro sh., Buxoro → Qarshi sh., Qashqadaryo
+2026-06-23 20:37:39 | INFO     | [Agent] Bo'sh mashinalar qidirilmoqda... (viloyat: Buxoro)
+2026-06-23 20:37:39 | INFO     | [Agent] Topilgan mashinalar: 1 ta yaqin, 10 ta uzoq
+2026-06-23 20:37:39 | INFO     | [Agent] AI baholash boshlandi (11 ta mashina)...
+2026-06-23 20:37:39 | INFO     | AFC is enabled with max remote calls: 10.
+2026-06-23 20:37:41 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-06-23 20:37:41 | INFO     | [Agent] AI tanladi: #4 20 V 3456 — ball: 100%
+2026-06-23 20:37:41 | INFO     | [Agent] Natija saqlanmoqda... kechikish: 1.158s
+2026-06-23 20:37:41 | INFO     | [Agent] ✓ Saqlandi | Zapros #13 → Mashina #4 | Ball: 100% | Kechikish: 1.158s
+2026-06-23 20:37:42 | INFO     | [Agent] Zapros #14 o'qilmoqda...
+2026-06-23 20:37:42 | INFO     | [Agent] Zapros topildi: Urganch sh., Xorazm → Nukus sh., Qoraqalpog'iston
+2026-06-23 20:37:42 | INFO     | [Agent] Bo'sh mashinalar qidirilmoqda... (viloyat: Xorazm)
+2026-06-23 20:37:42 | INFO     | [Agent] Topilgan mashinalar: 1 ta yaqin, 10 ta uzoq
+2026-06-23 20:37:42 | INFO     | [Agent] AI baholash boshlandi (11 ta mashina)...
+2026-06-23 20:37:42 | INFO     | AFC is enabled with max remote calls: 10.
+2026-06-23 20:37:43 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-06-23 20:37:43 | INFO     | [Agent] AI tanladi: #10 80 I 7890 — ball: 100%
+2026-06-23 20:37:43 | INFO     | [Agent] Natija saqlanmoqda... kechikish: 1.020s
+2026-06-23 20:37:43 | INFO     | [Agent] ✓ Saqlandi | Zapros #14 → Mashina #10 | Ball: 100% | Kechikish: 1.020s
+2026-06-23 20:37:44 | INFO     | [Agent] Zapros #15 o'qilmoqda...
+2026-06-23 20:37:44 | INFO     | [Agent] Zapros topildi: Termiz sh., Surxondaryo → Jizzax sh., Jizzax
+2026-06-23 20:37:44 | INFO     | [Agent] Bo'sh mashinalar qidirilmoqda... (viloyat: Surxondaryo)
+2026-06-23 20:37:44 | INFO     | [Agent] Topilgan mashinalar: 1 ta yaqin, 10 ta uzoq
+2026-06-23 20:37:44 | INFO     | [Agent] AI baholash boshlandi (11 ta mashina)...
+2026-06-23 20:37:44 | INFO     | AFC is enabled with max remote calls: 10.
+2026-06-23 20:37:45 | INFO     | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-06-23 20:37:45 | INFO     | [Agent] AI tanladi: #9 70 Z 3456 — ball: 100%
+2026-06-23 20:37:45 | INFO     | [Agent] Natija saqlanmoqda... kechikish: 1.342s
+2026-06-23 20:37:45 | INFO     | [Agent] ✓ Saqlandi | Zapros #15 → Mashina #9 | Ball: 100% | Kechikish: 1.342s

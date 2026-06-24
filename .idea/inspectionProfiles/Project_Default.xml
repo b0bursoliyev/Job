@@ -1,0 +1,41 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="ignoredPackages">
+        <list>
+          <option value="requests" />
+          <option value="streamlit" />
+          <option value="streamlit-webrtc" />
+          <option value="opencv-python-headless" />
+          <option value="fer" />
+          <option value="tensorflow" />
+          <option value="gTTS" />
+          <option value="av" />
+          <option value="deepface" />
+          <option value="tf-keras" />
+          <option value="ollama" />
+          <option value="chromadb" />
+          <option value="sentence-transformers" />
+          <option value="opencv-python" />
+          <option value="numpy" />
+          <option value="python-dotenv" />
+          <option value="pyyaml" />
+          <option value="slack-sdk" />
+          <option value="discord.py" />
+          <option value="aiohttp" />
+          <option value="asyncio-mqtt" />
+          <option value="pillow" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyStubPackagesCompatibilityInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredStubPackages">
+        <list>
+          <option value="pandas-stubs~=2.3.3" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
