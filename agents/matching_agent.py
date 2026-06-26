@@ -7,7 +7,7 @@ Graf holatlari:
 Har bir yangi zapros uchun:
   1. Zaprosni o'qiydi
   2. Mavjud bo'sh mashinalarni topadi
-   3. Google Gemini AI yordamida eng mos mashinani aniqlaydi
+  3. Ollama AI yordamida eng mos mashinani aniqlaydi
   4. Natijani agent_takliflari jadvaliga yozadi
 """
 
@@ -18,7 +18,7 @@ from datetime import datetime, timezone
 from typing import TypedDict, Optional, List, Annotated
 from decimal import Decimal
 
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_ollama import ChatOllama
 from langchain_core.messages import HumanMessage, SystemMessage
 from langgraph.graph import StateGraph, END
 from sqlalchemy.orm import Session
@@ -140,8 +140,8 @@ def mashinalarni_qidirish(holat: AgentHolat) -> AgentHolat:
 
 def ai_baholash(holat: AgentHolat) -> AgentHolat:
     """
-    3-qadam: Gemini AI yordamida eng mos mashinani tanlaydi va baholaydi.
-    LangChain ChatGoogleGenerativeAI modeli ishlatiladi.
+    3-qadam: Ollama AI yordamida eng mos mashinani tanlaydi va baholaydi.
+    LangChain ChatOllama modeli ishlatiladi.
     """
     if holat.get("xato"):
         return holat
@@ -151,10 +151,10 @@ def ai_baholash(holat: AgentHolat) -> AgentHolat:
 
     logger.info(f"[Agent] AI baholash boshlandi ({len(mashinalar)} ta mashina)...")
 
-    llm = ChatGoogleGenerativeAI(
-        model=os.getenv("AGENT_MODEL", "gemini-1.5-flash"),
-        google_api_key=os.getenv("GOOGLE_API_KEY"),
-        max_tokens=800,
+    llm = ChatOllama(
+        model=os.getenv("AGENT_MODEL", "llama3.2:3b"),
+        base_url=os.getenv("OLLAMA_BASE_URL", "http://localhost:11434"),
+        num_predict=800,
         temperature=0,
     )
 

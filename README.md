@@ -1,6 +1,6 @@
 # Yuk Tashish AI Matching Tizimi
 
-**LangGraph + Gemini AI + PostgreSQL** asosidagi avtomatik yuk tashish matching tizimi.
+**LangGraph + Ollama (Gemma 4) + PostgreSQL** asosidagi avtomatik yuk tashish matching tizimi.
 
 ---
 
@@ -28,7 +28,7 @@
 │  zapros_olish → mashinalarni_qidirish → ai_baholash     │
 │                                      → natijani_saqlash │
 │                                                         │
-│  (Gemini orqali AI qaror)                   │
+│  (Ollama Gemma 4 orqali AI qaror)                    │
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -40,7 +40,7 @@
 
 - Python 3.11+
 - PostgreSQL 14+
-- Anthropic API kalit
+- Ollama (local LLM server)
 
 ### 2. Muhit sozlash
 
@@ -53,6 +53,8 @@ venv\Scripts\activate           # Windows
 
 # Kutubxonalar
 pip install -r requirements.txt
+# yoki
+pip install -e .
 ```
 
 ### 3. PostgreSQL sozlash
@@ -64,7 +66,20 @@ CREATE USER yuk_user WITH PASSWORD 'parol123';
 GRANT ALL PRIVILEGES ON DATABASE yuk_tashish_db TO yuk_user;
 ```
 
-### 4. .env fayl
+### 4. Ollama sozlash
+
+```bash
+# Ollama o'rnatish (Linux/macOS)
+curl -fsSL https://ollama.com/install.sh | sh
+
+# Model yuklash
+ollama pull gemma4:12b
+
+# Server ishga tushirish
+ollama serve
+```
+
+### 5. .env fayl
 
 ```bash
 cp .env.example .env
@@ -72,9 +87,9 @@ cp .env.example .env
 ```
 
 ```env
-DATABASE_URL=postgresql://yuk_user:parol123@localhost:5432/yuk_tashish_db
-GOOGLE_GEMINI_API=sk-ant-...
-AGENT_MODEL=gemini-1.5-flash
+DATABASE_URL=postgresql://yuk_user:parol123@localhost:5433/yuk_tashish_db
+OLLAMA_BASE_URL=http://localhost:11434
+AGENT_MODEL=gemma4:12b
 ZAPROS_INTERVAL_MIN=1
 ZAPROS_INTERVAL_MAX=10
 ```
@@ -113,7 +128,7 @@ START
   │ xato? ──→ [xato_boshqarish] → END
   │
   ▼
-[ai_baholash]  ← GEMINI FLASH 1.5
+[ai_baholash]  ← OLLAMA GEMMA 4
   │ xato? ──→ [xato_boshqarish] → END
   │
   ▼

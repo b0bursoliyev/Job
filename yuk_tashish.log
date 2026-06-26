@@ -245,3 +245,67 @@ LINE 53:     ('50 E 5678', 'Farg\'ona sh., Farg\'ona', 40.3842, 71.78...
 2026-06-23 20:37:45 | INFO     | [Agent] AI tanladi: #9 70 Z 3456 — ball: 100%
 2026-06-23 20:37:45 | INFO     | [Agent] Natija saqlanmoqda... kechikish: 1.342s
 2026-06-23 20:37:45 | INFO     | [Agent] ✓ Saqlandi | Zapros #15 → Mashina #9 | Ball: 100% | Kechikish: 1.342s
+2026-06-26 15:28:48 | INFO     | Migratsiya boshlanmoqda...
+2026-06-26 15:28:48 | ERROR    | ✗ Migratsiya xatosi: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-26 15:28:55 | INFO     | Migratsiya boshlanmoqda...
+2026-06-26 15:28:55 | ERROR    | ✗ Migratsiya xatosi: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-26 15:29:03 | INFO     | Migratsiya boshlanmoqda...
+2026-06-26 15:29:03 | ERROR    | ✗ Migratsiya xatosi: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-26 15:32:00 | INFO     | Migratsiya boshlanmoqda...
+2026-06-26 15:32:00 | INFO     | ✓ Barcha jadvallar yaratildi (SQLAlchemy ORM)
+2026-06-26 15:32:00 | INFO     | ✓ 001_create_zaproslar.sql bajarildi
+2026-06-26 15:32:00 | INFO     | ✓ 002_create_malumotlar.sql bajarildi
+2026-06-26 15:32:00 | INFO     | ✓ 003_create_agent_takliflari.sql bajarildi
+2026-06-26 15:32:00 | INFO     | ✓ Migratsiya muvaffaqiyatli yakunlandi!
+2026-06-26 15:32:06 | INFO     | Migratsiya boshlanmoqda...
+2026-06-26 15:32:06 | INFO     | ✓ Barcha jadvallar yaratildi (SQLAlchemy ORM)
+2026-06-26 15:32:06 | WARNING  |   001_create_zaproslar.sql — trigger "trg_zaproslar_updated_at" for relation "zaproslar" already exists
+ (o'tkazib yuborildi)
+2026-06-26 15:32:06 | WARNING  |   002_create_malumotlar.sql — trigger "trg_malumotlar_updated_at" for relation "malumotlar" already exists
+ (o'tkazib yuborildi)
+2026-06-26 15:32:06 | WARNING  |   003_create_agent_takliflari.sql — trigger "trg_agent_takliflari_updated_at" for relation "agent_takliflari" already exists
+ (o'tkazib yuborildi)
+2026-06-26 15:32:06 | INFO     | ✓ Migratsiya muvaffaqiyatli yakunlandi!
+2026-06-26 15:32:07 | INFO     | Demo rejim boshlanmoqda...
+2026-06-26 15:32:07 | INFO     | [Agent] Zapros #1 o'qilmoqda...
+2026-06-26 15:32:07 | INFO     | [Agent] Zapros topildi: Toshkent sh., Toshkent → Samarqand sh., Samarqand
+2026-06-26 15:32:07 | INFO     | [Agent] Bo'sh mashinalar qidirilmoqda... (viloyat: Toshkent)
+2026-06-26 15:32:07 | INFO     | [Agent] Topilgan mashinalar: 2 ta yaqin, 10 ta uzoq
+2026-06-26 15:32:07 | INFO     | [Agent] AI baholash boshlandi (12 ta mashina)...
+2026-06-26 15:33:30 | INFO     | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:33:37 | INFO     | [Agent] AI tanladi: #1 01 A 1234 — ball: 100%
+2026-06-26 15:33:37 | INFO     | [Agent] Natija saqlanmoqda... kechikish: 89.892s
+2026-06-26 15:33:37 | INFO     | [Agent] ✓ Saqlandi | Zapros #1 → Mashina #1 | Ball: 100% | Kechikish: 89.892s
+2026-06-26 15:33:38 | INFO     | [Agent] Zapros #2 o'qilmoqda...
+2026-06-26 15:33:38 | INFO     | [Agent] Zapros topildi: Namangan sh., Namangan → Farg'ona sh., Farg'ona
+2026-06-26 15:33:38 | INFO     | [Agent] Bo'sh mashinalar qidirilmoqda... (viloyat: Namangan)
+2026-06-26 15:33:38 | INFO     | [Agent] Topilgan mashinalar: 1 ta yaqin, 10 ta uzoq
+2026-06-26 15:33:38 | INFO     | [Agent] AI baholash boshlandi (11 ta mashina)...
+2026-06-26 15:33:38 | INFO     | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:33:47 | INFO     | [Agent] AI tanladi: #5 30 G 7890 — ball: 100%
+2026-06-26 15:33:47 | INFO     | [Agent] Natija saqlanmoqda... kechikish: 8.949s
+2026-06-26 15:33:47 | INFO     | [Agent] ✓ Saqlandi | Zapros #2 → Mashina #5 | Ball: 100% | Kechikish: 8.949s
+2026-06-26 15:33:48 | INFO     | [Agent] Zapros #3 o'qilmoqda...
+2026-06-26 15:33:48 | INFO     | [Agent] Zapros topildi: Buxoro sh., Buxoro → Qarshi sh., Qashqadaryo
+2026-06-26 15:33:48 | INFO     | [Agent] Bo'sh mashinalar qidirilmoqda... (viloyat: Buxoro)
+2026-06-26 15:33:48 | INFO     | [Agent] Topilgan mashinalar: 1 ta yaqin, 10 ta uzoq
+2026-06-26 15:33:48 | INFO     | [Agent] AI baholash boshlandi (11 ta mashina)...
+2026-06-26 15:33:48 | INFO     | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-26 15:33:58 | INFO     | [Agent] AI tanladi: #4 20 V 3456 — ball: 100%
+2026-06-26 15:33:58 | INFO     | [Agent] Natija saqlanmoqda... kechikish: 10.256s
+2026-06-26 15:33:58 | INFO     | [Agent] ✓ Saqlandi | Zapros #3 → Mashina #4 | Ball: 100% | Kechikish: 10.256s
+2026-06-26 15:33:59 | INFO     | [Agent] Zapros #4 o'qilmoqda...
+2026-06-26 15:33:59 | INFO     | [Agent] Zapros topildi: Urganch sh., Xorazm → Nukus sh., Qoraqalpog'iston
+2026-06-26 15:33:59 | INFO     | [Agent] Bo'sh mashinalar qidirilmoqda... (viloyat: Xorazm)
+2026-06-26 15:33:59 | INFO     | [Agent] Topilgan mashinalar: 1 ta yaqin, 10 ta uzoq
+2026-06-26 15:33:59 | INFO     | [Agent] AI baholash boshlandi (11 ta mashina)...
+2026-06-26 15:34:00 | INFO     | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
